@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{$roles.username}</title>
+	<style>
+		*{
+			font-size: 16px;
+			line-height: 1.5em;
+		}
+		h1{
+			text-align:center;
+		}
+		p.subhead{
+			text-align: center;
+			font-size:12px;
+			color:#666;
+			text-indent: 0;
+		}
+		p{
+			text-indent: 2em;
+		}
+	</style>
+</head>
+<body>
+<div class="breadcrumb">首页 > <a href="{PUBLIC_PATH}roles/index">角色管理 </a>查看角色</div>
+	<p>角色名:{$roles.username}</p>
+	<p>注册时间：{$roles.registerTime|date_format:"Y-m-d H:i:s"}</p>
+	<p>邮箱：{$roles.email}</p>
+</body>
+</html>

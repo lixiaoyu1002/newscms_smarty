@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{$Msg.title}</title>
+	<style>
+		*{
+			font-size: 16px;
+			line-height: 1.5em;
+		}
+		h1{
+			text-align:center;
+		}
+		p.subhead{
+			text-align: center;
+			font-size:12px;
+			color:#666;
+			text-indent: 0;
+		}
+		p{
+			text-indent: 2em;
+		}
+	</style>
+</head>
+<body>
+<div class="breadcrumb">首页 > <a href="{PUBLIC_PATH}comments/index">评论管理 </a>查看评论</div>
+	<p>评论名称：{$Msg.title} 评论作者：{$Msg.author}</p>
+	<p>评论内容：{$Msg.content}</p>
+	<p class="subhead" align="right">发表时间：{$Msg.time|date_format:"Y-m-d H:i:s"}</p>
+</body>
+</html>
+		
